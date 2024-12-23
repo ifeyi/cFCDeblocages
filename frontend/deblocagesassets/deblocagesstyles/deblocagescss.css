@@ -1,0 +1,79 @@
+*, html{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: var(--deblocagesTransition);
+}
+:root{
+    --deblocagesBrown: #782E18;
+    --deblocagesYellow: #FFA51C;
+    --deblocagesLightYellow: #FFC671;
+    --deblocagesLighterYellow: #FFE8C5;
+    --deblocagesDarkYellow: #D48917;
+    --deblocagesDarkBrown: #4D281C;
+    --deblocagesWhite: #F4F4F4;
+    --deblocagesBlack: #1B1B1B;
+    --deblocagesPureWhite: #FFFFFF;
+    --deblocagesPureBlack: #000000;
+    --deblocagesGray: #999999;
+    --deblocagesDarkGray: #484848;
+    --deblocagesLightGray: #C9C9C9;
+    --deblocagesDarkerGray: #292929;
+    --deblocagesLighterGray: #E9E9E9;
+    --deblocagesLightGreen: #ADF7CB;
+    --deblocagesGreen: #18783E;
+    --deblocagesLightRed: #F7ADBC;
+    --deblocagesRed: #CE2020;
+    --deblocagesTransition: all .48s ease-in-out;
+    --deblocagesBoxShadow: 0 0 128px 0 rgba(0, 0, 0, .1);
+}
+
+body{
+    color: var(--deblocagesBlack);
+    font-family: 'Inter', sans-serif;
+    background-color: var(--deblocagesWhite);
+    line-height: 1.5;
+    background-color: var(--deblocagesDarkRed);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 1.1;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 1.65rem;
+}
+h4{
+    font-size: 1.35rem;
+}
+
+/* BUTTONS */
+.deblocage-btn{
+    padding: 1rem 2rem;
+    border: none;
+    background-color: var(--deblocagesYellow);
+    color: var(--deblocagesBlack);
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: var(--deblocagesTransition);
+}
+.deblocage-btn:hover{
+    background-color: var(--deblocagesDarkYellow);
+    color: var(--deblocagesWhite);
+}
+/* BUTTONS */
+
+.deblocage-container{
+    width: 92%;
+    margin: auto;
+}
+.deblocage-flex{
+    display: flex;
+}
+.deblocage-flex-column{
+    flex-direction: column;
+}
