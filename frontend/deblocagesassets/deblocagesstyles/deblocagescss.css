@@ -31,11 +31,12 @@
 body{
     color: var(--deblocagesBlack);
     font-family: 'Inter', sans-serif;
-    background-color: var(--deblocagesWhite);
+    background-color: var(--deblocagesPureWhite);
     line-height: 1.5;
-    background-color: var(--deblocagesDarkRed);
 }
 
+/* DESIGN SYSTEM */
+/* typography */
 h1, h2, h3, h4, h5, h6{
     font-family: 'Nunito Sans', sans-serif;
     line-height: 1.1;
@@ -49,10 +50,91 @@ h3{
 h4{
     font-size: 1.35rem;
 }
+/* typography */
 
-/* BUTTONS */
+a, a:visited, a:hover, a:focus{
+    text-decoration: none;
+    color: var(--deblocagesBrown);
+}
+.deblocage-container{
+    width: 92%;
+}
+.deblocage-position-relative{
+    position: relative;
+}
+.deblocage-position-absolute{
+    position: absolute;
+}
+.deblocage-position-fixed{
+    position: fixed;
+}
+.deblocage-position-sticky{
+    position: sticky;
+}
+.deblocage-bottom-0{
+    bottom: 0;
+}
+.deblocage-top-0{
+    top: 0;
+}
+.deblocage-left-0{
+    left: 0;
+}
+.deblocage-right-0{
+    right: 0;
+}
+.deblocage-flex{
+    display: flex;
+}
+.deblocage-none{
+    display: none;
+}
+.deblocage-block{
+    display: block;
+}
+.deblocage-flex-column{
+    flex-direction: column;
+}
+.deblocage-space-between{
+    justify-content: space-between;
+}
+.deblocage-align-center{
+    align-items: center;
+}
+.deblocage-with-100{
+    width: 100%;
+}
+.deblocage-height-100{
+    height: 100%;
+}
+.deblocage-height-100vh{
+    height: 100vh;
+}
+.deblocage-width-100vw{
+    width: 100vw;
+}
+.deblocage-with-auto{
+    width: auto;
+}
+.deblocage-with-auto{
+    height: auto;
+}
+.deblocage-svg{
+    height: 16px;
+}
+.deblocage-margin-auto{
+    margin: auto;
+}
+.deblocage-bg-color-transparent{
+    background-color: transparent;
+}
+.deblocage-input-transparent{
+    border: none;
+    outline: none;
+}
+/* Buttons */
 .deblocage-btn{
-    padding: 1rem 2rem;
+    padding: 8px 16px;
     border: none;
     background-color: var(--deblocagesYellow);
     color: var(--deblocagesBlack);
@@ -65,23 +147,94 @@ h4{
     background-color: var(--deblocagesDarkYellow);
     color: var(--deblocagesWhite);
 }
-/* BUTTONS */
-
-.deblocage-container{
-    width: 92%;
-    margin: auto;
-}
-.deblocage-flex{
-    display: flex;
-}
-.deblocage-flex-column{
-    flex-direction: column;
-}
+/* Buttons */
+/* DESIGN SYSTEM */
 
 /* HEADER */
-
 #deblocage-header{
-    padding: 8px auto;
+    padding: 16px 0;
+    background-color: var(--deblocagesPureWhite);
+}
+#deblocage-header #deblocage-logo img{
+    height: 48px;
+}
+#deblocage-logo a span, #deblocage-logo a:visited span,
+#deblocage-logo a:hover span, #deblocage-logo a:focus span{
+    color: var(--deblocagesBrown);
+    font-size: 32px;
+}
+#deblocage-logo .deblocage-flex{
+    gap: 8px;
+}
+#deblocage-header .deblocage-svg{
+    height: 24px;
+}
+#deblocage-header .deblocage-header-right{
+    gap: 16px;
+}
+.deblocage-search-form-container{
+    width: 48%;
+}
+.deblocage-search-form{
+    border-radius: 32px;
+    padding: 8px 8px 8px 24px;
+    background-color: var(--deblocagesWhite);
+}
+.deblocage-search-form input{
+    display: flex;
+    color: var(--deblocagesBlack);
+}
+#deblocage-header .deblocage-btn-search{
+    border-radius: 50%;
+    padding: 8px 8px 7px;
+}
+#deblocage-header .deblocage-btn-search .deblocage-magnifier{
+    height: 16px;
+}
+/* HEADER */
+
+/* MAIN */
+#deblocage-main{
+    padding: 64px 0;
+}
+.deblocage-login{
+    box-shadow: var(--deblocagesBoxShadow);
+    border-radius: 32px;
+    width: fit-content;
+    padding:64px;
+    gap: 24px;
+}
+.deblocage-login h2{
+    text-align: center;
+}
+.deblocage-login h2 img{
+    width: 48px;
+    margin-bottom: 8px;
+}
+.deblocage-login h2 span{
+    font-size: 16px;
+}
+.deblocage-login-form{
+    gap: 12px;
+}
+.deblocage-login-form .deblocage-input-label .deblocage-input-container{
+    border: 1px solid var(--deblocagesLightGray);
+    padding: 8px;
+    border-radius: 8px;
 }
 
-/* HEADER */
+.deblocage-input-label label{
+    margin-bottom: 4px;
+}
+#deblocage-svg-eye-off, #deblocage-svg-eye-on{cursor: pointer; width:16px;}
+/* MAIN */
+
+/* FOOTER */
+#deblocage-footer{
+    border-top: 1px solid var(--deblocagesLighterGray);
+    padding: 32px 0;
+}
+#deblocage-footer p{
+    text-align: center;
+}
+/* FOOTER */
