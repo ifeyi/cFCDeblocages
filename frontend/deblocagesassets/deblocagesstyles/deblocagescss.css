@@ -86,6 +86,9 @@ a, a:visited, a:hover, a:focus{
 .deblocage-flex{
     display: flex;
 }
+.deblocage-grid{
+    display: grid;
+}
 .deblocage-none{
     display: none;
 }
@@ -194,6 +197,8 @@ a, a:visited, a:hover, a:focus{
 /* HEADER */
 
 /* MAIN */
+
+/* Login page */
 #deblocage-main{
     padding: 64px 0;
 }
@@ -222,11 +227,12 @@ a, a:visited, a:hover, a:focus{
     padding: 8px;
     border-radius: 8px;
 }
-
-.deblocage-input-label label{
-    margin-bottom: 4px;
-}
 #deblocage-svg-eye-off, #deblocage-svg-eye-on{cursor: pointer; width:16px;}
+/*.deblocage-input-label label{
+    margin-bottom: 4px;
+}*/
+/* Login page */
+
 /* MAIN */
 
 /* FOOTER */
