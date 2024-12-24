@@ -77,3 +77,11 @@ h4{
 .deblocage-flex-column{
     flex-direction: column;
 }
+
+/* HEADER */
+
+#deblocage-header{
+    padding: 8px auto;
+}
+
+/* HEADER */
