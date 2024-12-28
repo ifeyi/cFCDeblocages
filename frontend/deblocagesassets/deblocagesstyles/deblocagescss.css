@@ -233,6 +233,49 @@ a, a:visited, a:hover, a:focus{
 }*/
 /* Login page */
 
+/* Demandes de prêts */
+#deblocage-tableau-prêts-container{
+    border-radius: 16px;
+    border: 1px solid var(--deblocagesLightGray);
+}
+#deblocage-tableau-prêts-container h2{
+    color: var(--deblocagesBrown);
+    padding: 32px;
+}
+.deblocage-tableau-prêts,
+.deblocage-tableau-prêts-header{
+    width: 100%;
+}
+.deblocage-tableau-prêts-header td{
+    color: var(--deblocagesGray);
+    width: fit-content;
+}
+.deblocage-tableau-prêts td{
+    padding: 16px 32px;
+    border-bottom: 1px solid var(--deblocagesLighterGray);
+}
+.deblocage-tableau-prêts tfoot td{
+    padding: 16px 32px;
+    border-bottom: none;
+    vertical-align: middle;
+}
+.deblocage-tableau-prêts tfoot td a{
+    padding: 16px;
+    color: var(--deblocagesBlack);
+}
+.deblocage-tableau-prêts tfoot td svg{
+    height: 12px;
+    fill: var(--deblocagesGray);
+}
+.deblocage-tableau-prêts .deblocage-arrow-bottom{
+    fill: var(--deblocagesGray);
+    height: 6px;
+}
+.deblocage-tableau-prêts-footer td{
+    width: 100%;
+}
+/* Demandes de prêts */
+
 /* MAIN */
 
 /* FOOTER */
