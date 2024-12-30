@@ -41,14 +41,23 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Nunito Sans', sans-serif;
     line-height: 1.1;
 }
+h1{
+    font-size: 3.2rem;
+}
 h2{
-    font-size: 3rem;
+    font-size: 2.1rem;
 }
 h3{
-    font-size: 1.65rem;
+    font-size: 1.64rem;
 }
 h4{
-    font-size: 1.35rem;
+    font-size: 1.32rem;
+}
+h5{
+    font-size: 1.16rem;
+}
+h6{
+    font-size: 1.08rem;
 }
 /* typography */
 
@@ -156,6 +165,7 @@ a, a:visited, a:hover, a:focus{
 /* HEADER */
 #deblocage-header{
     padding: 16px 0;
+    border-bottom: 1px solid var(--deblocagesLighterGray);
     background-color: var(--deblocagesPureWhite);
 }
 #deblocage-header #deblocage-logo img{
@@ -193,6 +203,13 @@ a, a:visited, a:hover, a:focus{
 }
 #deblocage-header .deblocage-btn-search .deblocage-magnifier{
     height: 16px;
+}
+#deblocage-header .deblocage-bell{
+    fill: var(--deblocagesBrown);
+    cursor: pointer;
+}
+#deblocage-header .deblocage-bell:hover{
+    fill: var(--deblocagesDarkBrown);
 }
 /* HEADER */
 
@@ -249,23 +266,44 @@ a, a:visited, a:hover, a:focus{
 .deblocage-tableau-prêts-header td{
     color: var(--deblocagesGray);
     width: fit-content;
+    cursor: pointer;
+}
+.deblocage-tableau-prêts-header td:hover{
+    color: var(--deblocagesDarkGray);
+}
+.deblocage-tableau-prêts-header td:hover svg{
+    fill: var(--deblocagesDarkGray);
 }
 .deblocage-tableau-prêts td{
     padding: 16px 32px;
     border-bottom: 1px solid var(--deblocagesLighterGray);
+}
+.deblocage-tableau-prêts tbody tr.deblocage-tableau-prêts-body{
+    cursor: pointer;
+}
+.deblocage-tableau-prêts tbody tr.deblocage-tableau-prêts-body:hover{
+    background-color: var(--deblocagesWhite);
 }
 .deblocage-tableau-prêts tfoot td{
     padding: 16px 32px;
     border-bottom: none;
     vertical-align: middle;
 }
-.deblocage-tableau-prêts tfoot td a{
+.deblocage-tableau-prêts tfoot td a,
+.deblocage-tableau-prêts tfoot td a:visited{
     padding: 16px;
     color: var(--deblocagesBlack);
+}
+.deblocage-tableau-prêts tfoot td a:hover,
+.deblocage-tableau-prêts tfoot td a:focus{
+    color: var(--deblocagesBrown);
 }
 .deblocage-tableau-prêts tfoot td svg{
     height: 12px;
     fill: var(--deblocagesGray);
+}
+.deblocage-tableau-prêts tfoot td a:hover svg{
+    fill: var(--deblocagesBrown);
 }
 .deblocage-tableau-prêts .deblocage-arrow-bottom{
     fill: var(--deblocagesGray);
@@ -273,6 +311,28 @@ a, a:visited, a:hover, a:focus{
 }
 .deblocage-tableau-prêts-footer td{
     width: 100%;
+}
+.deblocage-statut{
+    padding: 4px 8px;
+    border-radius: 32px;
+    font-weight: 500;
+}
+.deblocage-statut-attente{
+    color: var(--deblocagesDarkYellow);
+    background-color: var(--deblocagesLightYellow);
+}
+.deblocage-statut-attente{
+    color: var(--deblocagesDarkYellow);
+    background-color: var(--deblocagesLightYellow);
+}.deblocage-statut-valide{
+    color: var(--deblocagesDarkYellow);
+    background-color: var(--deblocagesLightYellow);
+}.deblocage-statut-expire{
+    color: var(--deblocagesDarkYellow);
+    background-color: var(--deblocagesLightYellow);
+}.deblocage-statut-renouveler{
+    color: var(--deblocagesDarkYellow);
+    background-color: var(--deblocagesLightYellow);
 }
 /* Demandes de prêts */
 
