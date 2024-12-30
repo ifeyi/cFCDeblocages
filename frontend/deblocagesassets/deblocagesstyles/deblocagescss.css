@@ -24,6 +24,7 @@
     --deblocagesGreen: #18783E;
     --deblocagesLightRed: #F7ADBC;
     --deblocagesRed: #CE2020;
+    --deblocagesDarkRed: #A43636;    
     --deblocagesTransition: all .48s ease-in-out;
     --deblocagesBoxShadow: 0 0 128px 0 rgba(0, 0, 0, .1);
 }
@@ -335,6 +336,64 @@ a, a:visited, a:hover, a:focus{
     background-color: var(--deblocagesLightYellow);
 }
 /* Demandes de prêts */
+
+/* Détails de la demande de prêt */
+
+#deblocage-demande-de-prets-single{
+    position: absolute;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    background-color: var(--deblocagesWhite);
+}
+#deblocage-demande-de-prets-header{
+    background-color: var(--deblocagesLighterGray);
+    padding: 8px 0;
+}
+#deblocage-demande-de-prets-single h2{
+    font-size: 24px;
+}
+.deblocage-btn-group{
+    gap: 8px;
+}
+#deblocage-demande-de-prets-single .deblocage-btn-group .deblocage-btn{
+    gap: 4px;
+}
+#deblocage-demande-de-prets-single a, #deblocage-demande-de-prets-single a:visited{
+    color: var(--deblocagesWhite);
+}
+#deblocage-demande-de-prets-single .deblocage-btn-annuler{
+    background-color: var(--deblocagesRed);
+}
+#deblocage-demande-de-prets-single .deblocage-btn-quitter{
+    background-color: var(--deblocagesGray);
+}
+#deblocage-demande-de-prets-single .deblocage-btn-renouveler{
+    background-color: var(--deblocagesYellow);
+}
+#deblocage-demande-de-prets-single .deblocage-btn-annuler:hover, #deblocage-demande-de-prets-single .deblocage-btn-annuler:focus{
+    background-color: var(--deblocagesDarkRed);
+}
+#deblocage-demande-de-prets-single .deblocage-btn-quitter:hover, #deblocage-demande-de-prets-single .deblocage-btn-quitter:focus{
+    background-color: var(--deblocagesDarkGray);
+}
+#deblocage-demande-de-prets-single .deblocage-btn-renouveler:hover, #deblocage-demande-de-prets-single .deblocage-btn-renouveler:focus{
+    background-color: var(--deblocagesDarkYellow);
+}
+
+#deblocage-demande-de-prets-single .deblocage-btn-annuler svg{
+    fill: var(--deblocagesWhite);
+}
+#deblocage-demande-de-prets-single .deblocage-btn-quitter svg{
+    fill: var(--deblocagesWhite);
+}
+#deblocage-demande-de-prets-single .deblocage-btn-renouveler svg{
+    fill: var(--deblocagesWhite);
+}
+/* Détails de la demande de prêt */
 
 /* MAIN */
 
