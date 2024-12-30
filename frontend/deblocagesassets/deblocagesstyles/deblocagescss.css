@@ -352,9 +352,11 @@ a, a:visited, a:hover, a:focus{
 #deblocage-demande-de-prets-header{
     background-color: var(--deblocagesLighterGray);
     padding: 8px 0;
+    border-bottom: 1px solid var(--deblocagesLightGray);
 }
 #deblocage-demande-de-prets-single h2{
     font-size: 24px;
+    color: var(--deblocagesBrown);
 }
 .deblocage-btn-group{
     gap: 8px;
