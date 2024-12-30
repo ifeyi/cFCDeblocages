@@ -348,6 +348,7 @@ a, a:visited, a:hover, a:focus{
     height: 100%;
     overflow: scroll;
     background-color: var(--deblocagesWhite);
+    gap: 16px;
 }
 #deblocage-demande-de-prets-header{
     background-color: var(--deblocagesLighterGray);
@@ -394,6 +395,53 @@ a, a:visited, a:hover, a:focus{
 }
 #deblocage-demande-de-prets-single .deblocage-btn-renouveler svg{
     fill: var(--deblocagesWhite);
+}
+
+.deblocage-demande-de-prets-details{
+    border-radius: 8px;
+    border: 1px solid var(--deblocagesLightGray);
+}
+#deblocage-demande-de-prets-body .deblocage-demande-de-prets-details h2{
+    color: var(--deblocagesBlack);
+    font-size: 24px;
+    padding: 32px 32px 24px;
+    border-bottom: 1px solid var(--deblocagesLightGray);
+}
+#deblocage-demande-de-prets-body .deblocage-demande-de-prets-details h3{
+    font-size: 20px;
+}
+#deblocage-accordion-container{
+    padding: 32px;
+    gap: 32px;
+}
+.deblocage-accordion-headings .deblocage-cacher{
+    background-color: transparent;
+    width: fit-content;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: var(--deblocagesBrown);
+}
+.deblocage-accordion-headings .deblocage-cacher svg{
+    height: 8px;
+    fill: var(--deblocagesBrown);
+}
+.deblocage-accordion-elt{
+    gap: 16px;
+}
+.deblocage-accordion-text-single {
+    border-bottom: 1px solid var(--deblocagesLightGray);
+    padding-bottom: 8px;
+}
+.deblocage-accordion-text-title{
+    min-width: 512px;
+}
+.deblocage-accordion-elt .deblocage-accordion-text .deblocage-accordion-text-desc .deblocage-svg{
+    height: 16px;
+    fill: var(--deblocagesBlack);
+}
+.deblocage-accordion-elt .deblocage-accordion-text .deblocage-accordion-text-desc{
+    gap: 8px;
 }
 /* Détails de la demande de prêt */
 
