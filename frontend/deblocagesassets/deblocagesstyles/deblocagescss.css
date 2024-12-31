@@ -444,7 +444,15 @@ a, a:visited, a:hover, a:focus{
     gap: 8px;
 }
 /* Détails de la demande de prêt */
-
+/* Accordion*/
+.deblocage-accordion-elt{
+    overflow: hidden;
+    height: 36px;
+}
+.deblocage-accordion-elt-active{
+    height: fit-content;
+}
+/* Accordion*/
 /* MAIN */
 
 /* FOOTER */
