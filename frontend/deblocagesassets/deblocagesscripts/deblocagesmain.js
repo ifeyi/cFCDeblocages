@@ -37,3 +37,22 @@ if(deblocageAccordionElt){
     });
 }
 /* ACCORDION */
+
+/* DEBLOCAGE SINGLE */
+
+let deblocageBtnQuitter = document.getElementById("deblocage-btn-quitter");
+let deblocageDemandeDePretsSingle = document.getElementById("deblocage-demande-de-prets-single");
+let deblocageTableauPretsBody = document.querySelectorAll(".deblocage-tableau-prets-body");
+
+deblocageTableauPretsBody.forEach((elt) => {
+    elt.addEventListener("click", () => {
+        deblocageDemandeDePretsSingle.classList.toggle("deblocage-none");
+    });
+});
+
+if(deblocageBtnQuitter){
+    deblocageBtnQuitter.addEventListener("click", () => {
+        deblocageDemandeDePretsSingle.classList.toggle("deblocage-none");
+    });
+}
+

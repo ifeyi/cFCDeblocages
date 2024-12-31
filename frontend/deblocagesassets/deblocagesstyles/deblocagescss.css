@@ -34,6 +34,7 @@ body{
     font-family: 'Inter', sans-serif;
     background-color: var(--deblocagesPureWhite);
     line-height: 1.5;
+    font-size: 14px;
 }
 
 /* DESIGN SYSTEM */
@@ -149,16 +150,30 @@ a, a:visited, a:hover, a:focus{
 .deblocage-btn{
     padding: 8px 16px;
     border: none;
+    font-size: 14px;
     background-color: var(--deblocagesYellow);
     color: var(--deblocagesBlack);
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     border-radius: 8px;
-    transition: var(--deblocagesTransition);
 }
 .deblocage-btn:hover{
     background-color: var(--deblocagesDarkYellow);
     color: var(--deblocagesWhite);
+}
+.deblocage-btn-primary{
+    background-color: var(--deblocagesBrown);
+    color: var(--deblocagesWhite);
+}
+.deblocage-btn-primary:hover, .deblocage-btn-primary:focus{
+    background-color: var(--deblocagesDarkBrown);
+}
+.deblocage-btn-secondary{
+    background-color: var(--deblocagesGray);
+    color: var(--deblocagesWhite);
+}
+.deblocage-btn-secondary:hover, .deblocage-btn-secondary:focus{
+    background-color: var(--deblocagesDarkGray);
 }
 /* Buttons */
 /* DESIGN SYSTEM */
@@ -279,10 +294,10 @@ a, a:visited, a:hover, a:focus{
     padding: 16px 32px;
     border-bottom: 1px solid var(--deblocagesLighterGray);
 }
-.deblocage-tableau-prêts tbody tr.deblocage-tableau-prêts-body{
+.deblocage-tableau-prêts tbody tr.deblocage-tableau-prets-body{
     cursor: pointer;
 }
-.deblocage-tableau-prêts tbody tr.deblocage-tableau-prêts-body:hover{
+.deblocage-tableau-prêts tbody tr.deblocage-tableau-prets-body:hover{
     background-color: var(--deblocagesWhite);
 }
 .deblocage-tableau-prêts tfoot td{
@@ -368,6 +383,12 @@ a, a:visited, a:hover, a:focus{
 #deblocage-demande-de-prets-single a, #deblocage-demande-de-prets-single a:visited{
     color: var(--deblocagesWhite);
 }
+#deblocage-accordion-container .deblocage-accordion-elt a, #deblocage-accordion-container .deblocage-accordion-elt a:visited{
+    color: var(--deblocagesBrown);
+}
+#deblocage-accordion-container .deblocage-accordion-elt a:hover, #deblocage-accordion-container .deblocage-accordion-elt a:focus{
+    color: var(--deblocagesDarkBrown);
+}
 #deblocage-demande-de-prets-single .deblocage-btn-annuler{
     background-color: var(--deblocagesRed);
 }
@@ -410,9 +431,20 @@ a, a:visited, a:hover, a:focus{
 #deblocage-demande-de-prets-body .deblocage-demande-de-prets-details h3{
     font-size: 20px;
 }
-#deblocage-accordion-container{
+#deblocage-accordion-container, .deblocage-submit-group{
     padding: 32px;
     gap: 32px;
+}
+.deblocage-btn-submit-group{
+    gap: 8px;
+}
+.deblocage-submit-group{
+    padding-top: 0;
+    gap: 16px;
+}
+.deblocage-submit-group .deblocage-flex{
+    align-items: center;
+    gap: 8px;
 }
 .deblocage-accordion-headings .deblocage-cacher{
     background-color: transparent;
@@ -440,8 +472,14 @@ a, a:visited, a:hover, a:focus{
     height: 16px;
     fill: var(--deblocagesBlack);
 }
-.deblocage-accordion-elt .deblocage-accordion-text .deblocage-accordion-text-desc{
+.deblocage-accordion-elt .deblocage-accordion-text .deblocage-accordion-text-desc,
+.deblocage-accordion-elt .deblocage-accordion-text .deblocage-accordion-text-desc a{
     gap: 8px;
+}
+.deblocage-accordion-elt .deblocage-accordion-text .deblocage-accordion-text-desc a svg{
+    fill: var(--deblocagesBrown) !important;
+}.deblocage-accordion-elt .deblocage-accordion-text .deblocage-accordion-text-desc a:hover svg{
+    fill: var(--deblocagesDarkBrown) !important;
 }
 /* Détails de la demande de prêt */
 /* Accordion*/
