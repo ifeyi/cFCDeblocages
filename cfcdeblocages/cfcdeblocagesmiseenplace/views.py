@@ -16,7 +16,7 @@ def home(request):
             messages.success(request, 'Vous êtes connecté')
             return redirect('home')
         else:
-            messages.error(request, 'Identifiants incorrects')
+            messages.error(request, 'Identifiants incorrects!')
             return redirect('home')
     else:
         return render(request, 'home.html', {})
