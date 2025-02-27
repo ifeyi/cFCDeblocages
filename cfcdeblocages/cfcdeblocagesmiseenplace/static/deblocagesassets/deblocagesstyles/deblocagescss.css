@@ -250,6 +250,16 @@ a, a:visited, a:hover, a:focus{
 #deblocage-header .deblocage-header-right .deblocage-logout{
     height: 16px;
 }
+.deblocage-connecte-entant p{
+    color: var(--deblocagesGray);
+    margin: 0;
+    line-height: 1.2;
+    font-size: 12px;
+}
+.deblocage-connecte-entant p strong{
+    color: var(--deblocagesDarkBrown);
+    font-size: 14px;
+}
 /* HEADER */
 
 /* MAIN */
