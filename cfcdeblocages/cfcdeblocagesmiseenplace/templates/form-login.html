@@ -14,7 +14,7 @@
                 {% csrf_token %}
                 <div class="deblocage-input-label">
                     <div class="deblocage-input-container deblocage-flex">
-                        <input class="deblocage-with-100 deblocage-input-transparent deblocage-bg-color-transparent deblocage-input" type="text" name="deblocage-username" id="deblocage-username" placeholder="Nom d'utilisateur" required>
+                        <input class="deblocage-with-100 deblocage-input-transparent deblocage-bg-color-transparent deblocage-input" type="email" name="deblocage-usermail" id="deblocage-username" placeholder="Votre adresse email" required>
                     </div>
                 </div>
                 <div class="deblocage-input-label">
@@ -33,6 +33,12 @@
 
                 <button class="deblocage-btn-submit deblocage-btn" type="submit">Se connecter</button>
             </form>
+
+            {% for message in messages %}
+                <div class="deblocage-error-message-wrapper">
+                    {{message}}
+                </div>
+            {% endfor %}
         </div>
     </div>
 </main>
