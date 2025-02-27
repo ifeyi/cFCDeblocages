@@ -33,12 +33,11 @@
 
                 <button class="deblocage-btn-submit deblocage-btn" type="submit">Se connecter</button>
             </form>
-
-            {% for message in messages %}
-                <div class="deblocage-error-message-wrapper">
-                    {{message}}
-                </div>
-            {% endfor %}
         </div>
+        {% for message in messages %}
+        <div class="deblocage-error-message-wrapper">
+            {{message}}
+        </div>
+    {% endfor %}
     </div>
 </main>

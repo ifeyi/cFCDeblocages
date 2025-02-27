@@ -502,3 +502,10 @@ a, a:visited, a:hover, a:focus{
     text-align: center;
 }
 /* FOOTER */
+
+.deblocage-error-message-wrapper{
+    text-align: center;
+    color: var(--deblocagesDarkRed);
+    text-align-last: center;
+    padding: 16px 0;
+}
