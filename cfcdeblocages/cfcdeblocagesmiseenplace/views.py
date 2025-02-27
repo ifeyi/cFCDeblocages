@@ -13,7 +13,6 @@ def home(request):
 
         if user is not None:
             login(request, user)
-            messages.success(request, 'Vous êtes connecté')
             return redirect('home')
         else:
             messages.error(request, 'Identifiants incorrects!')
@@ -22,4 +21,6 @@ def home(request):
         return render(request, 'home.html', {})
 
 def logout_user(request):
-    pass
+    logout(request)
+    messages.success(request, 'Vous avez été déconnecté')
+    return redirect('home')

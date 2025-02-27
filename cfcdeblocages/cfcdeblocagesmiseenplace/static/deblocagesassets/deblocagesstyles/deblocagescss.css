@@ -220,12 +220,35 @@ a, a:visited, a:hover, a:focus{
 #deblocage-header .deblocage-btn-search .deblocage-magnifier{
     height: 16px;
 }
-#deblocage-header .deblocage-bell{
+#deblocage-header .deblocage-bell,
+#deblocage-header .deblocage-logout{
     fill: var(--deblocagesBrown);
     cursor: pointer;
 }
-#deblocage-header .deblocage-bell:hover{
+#deblocage-header .deblocage-bell:hover,
+#deblocage-header .deblocage-logout:hover{
     fill: var(--deblocagesDarkBrown);
+}
+.deblocage-logout-wrapper{
+    align-items: center;
+    padding-right: 16px;
+    gap: 4px;
+}
+#deblocage-logout-language{
+    border-radius: 8px;
+    align-items: center;
+    background-color: var(--deblocagesYellow);
+    font-weight: 500;
+}
+.deblocage-lang-wrapper{
+    padding: 16px 12px 16px 16px;
+    border-right: 1px solid var(--deblocagesDarkYellow);
+}
+.deblocage-logout-wrapper{
+    padding: 16px 16px 16px 12px;
+}
+#deblocage-header .deblocage-header-right .deblocage-logout{
+    height: 16px;
 }
 /* HEADER */
 
